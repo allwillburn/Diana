@@ -1,5 +1,5 @@
 
-local ver = "0.01"
+local ver = "0.02"
 
 if GetObjectName(GetMyHero()) ~= "Diana" then return end
 
@@ -33,6 +33,7 @@ DianaMenu.Combo:Slider("Qpred", "Q Hit Chance", 3,0,10,1)
 DianaMenu.Combo:Boolean("W", "Use W in combo", true)
 DianaMenu.Combo:Boolean("E", "Use E in combo", false)
 DianaMenu.Combo:Boolean("R", "Use R in combo", false)
+DianaMenu.Combo:Slider("RX", "X Enemies to Cast R",3,1,5,1)
 DianaMenu.Combo:Boolean("Gunblade", "Use Gunblade", true)
 DianaMenu.Combo:Boolean("Randuins", "Use Randuins", true)
 
